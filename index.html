@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Skill Bank - A platform to connect and learn new skills.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/skilll-logo.png">
+    <link rel="shortcut icon" href="assets/skilll-logo.png">
+    <title>Skill Bank - Connect and Learn</title>
+</head>
+<body class="page-wrapper">
+    <div id="particles-js"></div>
+    <header>
+        <nav class="container">
+            <a href="#" class="logo">
+                <img src="assets/skilll-logo.png" alt="Skill Bank Logo" class="logo-img">
+                <span class="logo-text">Skill Bank</span>
+            </a>
+            <div class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="skills.html">Find a Skill</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <a href="#form-section" class="btn btn-primary">Apply Now</a>
+                </div>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-content scroll-animate slide-in-left">
+                    <p class="hero-subtitle">Welcome to Excellence</p>
+                    <h1 class="hero-title">Connect, Learn & <span class="highlight">GROW</span></h1>
+                    <p class="hero-description">Join our professional community of learners and educators. Discover new skills, share your expertise, and advance your career through peer-to-peer learning.</p>
+
+                    <div class="hero-buttons">
+                        <a href="skills.html" class="btn btn-secondary">Explore Skills</a>
+                        <a href="#form-section" class="btn btn-primary">Join Community</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="how-it-works" class="how-it-works-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">How It Works</h2>
+                    <p>Our streamlined process ensures a seamless learning experience from discovery to mastery.</p>
+                </div>
+                <div class="how-it-works-grid">
+                    <div class="step">
+                        <div class="step-icon"><i class="fas fa-search"></i></div>
+                        <h3>1. Discover Skills</h3>
+                        <p>Explore our comprehensive catalog of skills taught by verified professionals and industry experts.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-icon"><i class="fas fa-calendar-check"></i></div>
+                        <h3>2. Schedule Sessions</h3>
+                        <p>Book personalized learning sessions that fit your schedule and learning preferences.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <h3>3. Achieve Mastery</h3>
+                        <p>Engage in structured learning experiences designed to accelerate your skill development.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="cta" class="cta-section">
+            <div class="container cta-container">
+                <div class="cta-content">
+                    <h2>Ready to Transform Your Future?</h2>
+                    <p>Join thousands of professionals who are already advancing their careers through Skill Bank. Take the first step towards your next achievement.</p>
+                    <a href="#form-section" class="btn btn-primary">Begin Your Journey</a>
+                </div>
+            </div>
+        </section>
+        <section id="form-section" class="new-contact-section">
+            <div class="new-contact-container">
+                <div class="new-contact-left">
+                    <div class="form-title">
+                        <h2>Join Our Professional <span class="highlight">Community</span></h2>
+                        <p>Teach and learn valuable skills by joining our community of professionals.</p>
+                    </div>
+                    <form action="https://formspree.io/f/xyzpayrj" method="POST" class="new-contact-form" id="join-community-form">
+                        <input type="hidden" name="_replyto" value="skillbank0@gmail.com">
+                        <input type="hidden" name="_subject" value="New Community Member Application - Skill Bank">
+                        <div class="form-row">
+                            <div class="form-group-new">
+                                <input type="text" id="name" name="name" required>
+                                <label for="name">Full Name</label>
+                            </div>
+                            <div class="form-group-new">
+                                <input type="email" id="email" name="email" required>
+                                <label for="email">Email Address</label>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                             <div class="form-group-new">
+                                <input type="tel" id="phone" name="phone" required>
+                                <label for="phone">Phone Number</label>
+                            </div>
+                            <div class="form-group-new">
+                                <input type="text" id="location" name="location" required>
+                                <label for="location">Location</label>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group-new custom-select-wrapper">
+                                <select id="gender" name="gender" required>
+                                    <option value="" disabled selected hidden></option>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                    <option value="Other">Other</option>
+                                    <option value="Prefer not to say">Prefer not to say</option>
+                                </select>
+                                <label for="gender">Gender</label>
+                            </div>
+                            <div class="form-group-new custom-select-wrapper">
+                                <select id="age" name="age">
+                                    <option value="" disabled selected hidden></option>
+                                    <option value="18-24">18-24 years</option>
+                                    <option value="25-34">25-34 years</option>
+                                    <option value="35-44">35-44 years</option>
+                                    <option value="45-54">45-54 years</option>
+                                    <option value="55-64">55-64 years</option>
+                                    <option value="65+">65+ years</option>
+                                    <option value="Prefer not to say">Prefer not to say</option>
+                                </select>
+                                <label for="age">Age Group</label>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn-send">Submit Application</button>
+                    </form>
+                    <div id="form-thank-you" class="form-thank-you" style="display: none;">
+                        <div class="form-title">
+                            <h2>Thank You For <span class="highlight">Joining Us!</span></h2>
+                            <p>We're excited to have you in our community. What would you like to do next?</p>
+                        </div>
+                        <div class="hero-buttons" style="justify-content: center;">
+                            <a href="skills.html" class="btn btn-primary">Find a Skill Exchange</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="new-contact-right">
+                    <div class="help-box">
+                        <h3><i class="fas fa-info-circle"></i> What's Next?</h3>
+                        <p>After submitting your application, our professional team will conduct a thorough review and respond within 2-3 business days with personalized next steps and recommendations.</p>
+                        <div class="aside-features">
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Personalized Learning Path</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Expert Mentor Matching</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Flexible Scheduling</span>
+                            </div>
+                        </div>
+                        <a href="javascript:void(0)" class="download-link-new" id="open-guidelines-modal">
+                            <i class="fas fa-file-alt"></i>
+                            <span>Community Guidelines</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="decorative-shape"></div>
+        </section>
+
+    </main>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3>Skill Bank</h3>
+                    <p>Our mission is to create a global community for learning and teaching. Connect with peers, share your expertise, and discover new passions.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="skills.html">Find a Skill</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Skill Bank. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- The Modal -->
+    <div id="guidelines-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Community Guidelines</h2>
+            <p>Welcome to Skill Bank! To ensure a safe, respectful, and productive environment for everyone, we ask all members to adhere to the following guidelines:</p>
+            <ul>
+                <li><strong>Be Respectful:</strong> Treat all members with courtesy and respect. Harassment, bullying, and hate speech will not be tolerated.</li>
+                <li><strong>Be Honest:</strong> Represent your skills and experience accurately. Do not mislead others about your abilities or what you can teach.</li>
+                <li><strong>Stay On Topic:</strong> Keep discussions and sessions focused on learning and teaching skills.</li>
+                <li><strong>No Soliciting:</strong> Do not use the platform for commercial solicitation or to promote external businesses unless it is directly related to a skill you are teaching.</li>
+                <li><strong>Protect Privacy:</strong> Do not share personal or confidential information about yourself or others without consent.</li>
+                <li><strong>Report Violations:</strong> If you see something that violates our guidelines, please report it to our support team immediately.</li>
+            </ul>
+            <p>By following these guidelines, you help us create a positive and trustworthy community for everyone. Thank you for being a part of Skill Bank!</p>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.9.3/tsparticles.bundle.min.js"></script>
+    <script src="js/particles-config.js"></script>
+</body>
+</html>
