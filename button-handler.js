@@ -165,7 +165,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     </div>
                     <div class="demo-cta">
                         <button class="btn btn-primary btn-large demo-register">Get Started Now</button>
-                        <p class="demo-note">Join 200+ professionals already exchanging skills</p>
+                        <p class="demo-note">Join 180 professionals already exchanging skills</p>
                     </div>
                 </div>
             </div>

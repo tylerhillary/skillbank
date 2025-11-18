@@ -14,7 +14,7 @@ const faqData = [
     },
     {
         question: "Is Skill Bank free to use?",
-        answer: "Registration and basic features are completely free. You can create a profile, browse skills, view matches, and exchange skills with other members at no cost. Some premium features like marketplace connections (₦20,000 per skill) and priority matching may require payment.",
+        answer: "Registration and basic features are completely free. You can create a profile, browse skills, view matches, and exchange skills with other members at no cost. Some premium features like marketplace connections (₦20,000 / ~$25 USD per skill) and priority matching may require payment.",
         category: "Payments & Pricing",
         tags: ["pricing", "plans", "marketplace"]
     },
@@ -38,13 +38,13 @@ const faqData = [
     },
     {
         question: "How do I connect with someone?",
-        answer: "You can connect through your recommended matches (free) by clicking 'Connect' on their profile, or through the marketplace by browsing skills and paying a connection fee (₦20,000) to access all professionals teaching that skill.",
+        answer: "You can connect through your recommended matches (free) by clicking 'Connect' on their profile, or through the marketplace by browsing skills and paying a connection fee (₦20,000 / ~$25 USD) to access all professionals teaching that skill.",
         category: "Matching & Sessions",
         tags: ["connections", "marketplace", "networking"]
     },
     {
         question: "What are the connection fees?",
-        answer: "Per-Skill Connection through the marketplace costs ₦20,000 and unlocks access to all professionals teaching that skill permanently. Connecting with your algorithmic matches is always free. The connection fee is one-time payment.",
+        answer: "Per-Skill Connection through the marketplace costs ₦20,000 (~$25 USD) and unlocks access to all professionals teaching that skill permanently. Connecting with your algorithmic matches is always free. The connection fee is one-time payment.",
         category: "Payments & Pricing",
         tags: ["fees", "payments", "cost"]
     },
