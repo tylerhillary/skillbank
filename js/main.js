@@ -417,7 +417,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const rate = parseInt(value);
             if (isNaN(rate) || rate < 10000) {
                 isValid = false;
-                errorMessage = 'Monthly rate must be at least ₦10,000.';
+                errorMessage = 'Monthly rate must be at least $10,000.';
             }
         }
 
@@ -951,7 +951,7 @@ document.addEventListener('DOMContentLoaded', () => {
             let optionsHTML = tiers.map(tier => {
                 const name = tier.querySelector('.tier-name').textContent;
                 const priceText = tier.querySelector('.tier-price').textContent;
-                const price = parseInt(priceText.replace('₦', ''));
+                const price = parseInt(priceText.replace('₦', '').replace('$', ''));
                 return `<div class="tier-option" data-tier="${name}" data-price="${price}">
                             <span class="tier-name">${name}</span>
                             <span class="tier-price">${priceText}</span>
@@ -1068,7 +1068,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <span class="skill-name"><strong>${skillName}</strong></span>
                             <span class="skill-tier">${skill.tier} Level</span>
                         </div>
-                        <span class="skill-price">₦${skill.price.toLocaleString()}</span>
+                        <span class="skill-price">$${skill.price.toLocaleString()}</span>
                         <button type="button" class="remove-skill-btn" title="Remove ${skillName}">
                             <i class="fas fa-times"></i>
                         </button>
@@ -1133,7 +1133,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const hiddenPriceInput = document.createElement('input');
                 hiddenPriceInput.type = 'hidden';
                 hiddenPriceInput.name = 'Total Price';
-                hiddenPriceInput.value = `₦${totalAmountSpan.textContent}`;
+                hiddenPriceInput.value = `$${totalAmountSpan.textContent}`;
                 learningForm.appendChild(hiddenPriceInput);
 
                 // Submit form
@@ -1449,7 +1449,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 } else if (skillsForComparison.length < 3) {
                     // Add to comparison
                     const tier = card.querySelector('.pricing-tier:first-child .tier-name').textContent;
-                    const price = parseInt(card.querySelector('.pricing-tier:first-child .tier-price').textContent.replace('₦', ''));
+                    const price = parseInt(card.querySelector('.pricing-tier:first-child .tier-price').textContent.replace('₦', '').replace('$', ''));
                     skillsForComparison.push({ name: skillName, tier, price });
                     card.classList.add('selected-for-compare');
                 } else {
@@ -1474,7 +1474,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="comparison-item">
                     <h4>${skill.name}</h4>
                     <p><strong>Tier:</strong> ${skill.tier}</p>
-                    <p class="price">₦${skill.price.toLocaleString()}</p>
+                    <p class="price">$${skill.price.toLocaleString()}</p>
                 </div>
             `).join('');
         }
@@ -1967,7 +1967,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const item = document.createElement('div');
         item.className = 'tier-item';
         item.innerHTML = `
-            <span><strong>${name}</strong> - ₦${price}</span>
+            <span><strong>${name}</strong> - $${price}</span>
             <button type="button" class="remove-item-btn" onclick="this.parentElement.remove(); updateSkillPreview();">&times;</button>
         `;
         list.appendChild(item);
@@ -2077,7 +2077,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     `<div class="preview-tier"><span class="tier-name">${tier.name}</span><span class="tier-price">${tier.price}</span></div>`
                 ).join('');
             } else {
-                previewPricing.innerHTML = '<div class="preview-tier"><span class="tier-name">Basic</span><span class="tier-price">₦0</span></div>';
+                previewPricing.innerHTML = '<div class="preview-tier"><span class="tier-name">Basic</span><span class="tier-price">$0</span></div>';
             }
         }
     }
@@ -2311,7 +2311,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const rate = parseInt(value);
             if (rate < 1000) {
                 isValid = false;
-                message = 'Minimum hourly rate is ₦1,000';
+                message = 'Minimum hourly rate is $1,000';
             }
         }
         

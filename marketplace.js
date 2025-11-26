@@ -122,7 +122,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <h2>Payment Required</h2>
                 <p class="alert-message">To connect with <strong>${skill}</strong> professionals, you need to pay:</p>
                 <div class="alert-price">
-                    <span class="currency">₦</span>
+                    <span class="currency">$</span>
                     <span class="amount">${formattedPrice}</span>
                 </div>
                 <p class="alert-note">Please contact our support team to complete this payment and unlock access to verified professionals.</p>
@@ -296,7 +296,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
         
         // Log the payment request (for analytics/tracking)
-        console.log(`Payment requested: ${skill} - ₦${formattedPrice}`);
+        console.log(`Payment requested: ${skill} - $${formattedPrice}`);
         
         // Store in localStorage (for admin tracking)
         storePaymentRequest(skill, price);
@@ -337,6 +337,6 @@ document.addEventListener('DOMContentLoaded', () => {
 window.MarketplaceHandler = {
     showPaymentAlert: (skill, price) => {
         // Can be called from other scripts
-        console.log(`External payment alert call: ${skill} - ₦${price}`);
+        console.log(`External payment alert call: ${skill} - $${price}`);
     }
 };

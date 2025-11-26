@@ -7,9 +7,17 @@ body.faq-page {
 }
 
 .faq-hero {
-    background: linear-gradient(135deg, #020a1a 0%, #0b2b63 100%);
-    color: white;
+    position: relative;
     padding: 160px 0 100px;
+    margin: 0;
+    background-image: url("img/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    color: var(--text-primary);
+}
+
+.faq-hero * {
+    color: inherit;
 }
 
 .faq-hero-grid {
@@ -46,7 +54,7 @@ body.faq-page {
     list-style: none;
     display: grid;
     gap: 10px;
-    color: rgba(255, 255, 255, 0.9);
+    color: var(--text-primary);
     font-weight: 500;
     font-size: 0.9rem;
 }
@@ -62,7 +70,7 @@ body.faq-page {
     width: 10px;
     height: 10px;
     border-radius: 999px;
-    background: var(--accent);
+    background: var(--primary);
 }
 
 .faq-contact-card {
